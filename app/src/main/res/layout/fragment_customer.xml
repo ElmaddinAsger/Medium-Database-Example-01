@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CustomerFragment"
+    android:padding="20dp">
+    <EditText
+        android:id="@+id/edttxt_customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Customer Name"
+        android:textSize="20.5sp"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <EditText
+        android:id="@+id/edttxt_customer_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Customer Age"
+        android:textSize="20.5sp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/edttxt_customer_name"/>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save"
+        app:layout_constraintTop_toBottomOf="@id/edttxt_customer_age"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
